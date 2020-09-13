@@ -2,10 +2,14 @@ import React from 'react';
 import './App.css';
 import Row from './components/Row/Row'
 import requests from './requests';
+import Banner from './components/Banner/Banner';
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
+      <Banner />
       <Row 
         title="NETFLEX ORIGINALS"
         fetchUrl={requests.fetchNetflexOriginals}
