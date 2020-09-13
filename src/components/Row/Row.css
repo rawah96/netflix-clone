@@ -1,0 +1,38 @@
+.row {
+    
+}
+
+/**/
+.row-poster {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+/* tell all the browsers to not display the scrollbar but keep it's functionality */
+.row-poster::-webkit-scrollbar {
+    display: none;
+}
+
+/* contain will keep the aspect ratio */
+.poster-img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.poster-img:hover {
+    transform: scale(1.10);
+}
+
+.poster-img-lg {
+    max-height: 250px;
+}
+
+.poster-img-lg:hover {
+    transform: scale(1.11);
+}
