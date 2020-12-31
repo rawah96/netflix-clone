@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Banner />
-      {/* <Row 
+      <Row 
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflexOriginals}
         isLargeRow
-      /> */}
+      />
       <Row 
         title="Trending Now"
         fetchUrl={requests.fetchTrending}
